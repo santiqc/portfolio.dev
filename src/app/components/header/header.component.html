@@ -1,0 +1,56 @@
+<header
+  class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
+>
+  <nav
+    class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
+  >
+    @for (item of navItems; track $index) {
+    <a
+      class="relative block px-2 py-2 transition hover:text-green-400 dark:hover:text-green-400"
+      aria-label="{item.label}"
+      href="{item.url}"
+    >
+      {{ item.title }}
+    </a>
+    }
+    <div class="relative ml-1 mr-1">
+      <button
+        id="theme-toggle-btn"
+        class="appearance-none border-none flex hover:scale-125 transition"
+        (click)="togglePopover()"
+      >
+        <span class="sr-only">Elige el tema</span>
+        @if (themeKey == 'theme' && theme == 'light') {
+        <app-sun-icon
+          id="light"
+          class="theme-toggle-icon size-5 transition-all"
+        />}@else if (themeKey == 'theme' && theme == 'dark') {
+        <app-moon-icon
+          id="dark"
+          class="theme-toggle-icon size-5 transition-all"
+        />
+        } @else {
+        <app-system-icon
+          id="system"
+          class="theme-toggle-icon size-5 transition-all"
+        />
+        }
+      </button>
+      <div
+        id="themes-menu"
+        [class.open]="isPopoverOpen"
+        class="absolute hidden scale-80 top-8 right-0 text-sm p-1 min-w-[8rem] rounded-md border border-gray-100 bg-white/90 dark:bg-gray-900/90 dark:border-gray-500/20 shadow-[0_3px_10px_rgb(0,0,0,0.2)] backdrop-blur-md"
+      >
+        <ul>
+          <li
+            *ngFor="let item of themeOptions; let i = index"
+            class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm"
+            (click)="handleThemeButton(item)"
+          >
+            {{ item }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
