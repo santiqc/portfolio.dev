@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Input, input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-sun-icon',
+  selector: 'app-mail-icon',
   standalone: true,
   imports: [
     CommonModule,
@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component, Input, input } from '@angular/core'
   template: `
       <svg
         [class]="class"
-        [id]="id"
+        class="icon icon-tabler icon-tabler-mail-forward"
         width="24"
         height="24"
         viewBox="0 0 24 24"
@@ -20,15 +20,15 @@ import { ChangeDetectionStrategy, Component, Input, input } from '@angular/core'
         stroke-linecap="round"
         stroke-linejoin="round"
       >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"/>
-      <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"/>
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" />
+        <path d="M3 6l9 6l9 -6" />
+        <path d="M15 18h6" />
+        <path d="M18 15l3 3l-3 3" />
       </svg>
-      `,
+    `,
 })
-export class MoonIconComponent {
-
-  @Input() id: String = '';
+export class MailIconComponent {
   @Input() class: String = '';
 
 }

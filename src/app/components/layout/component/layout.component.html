@@ -1,0 +1,55 @@
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg w-16 h-16 object-cover"
+      src="assets/images/santiqc.png"
+      alt="Imagen de perfil de Santi"
+    />
+    <a
+      href="https://linkedin.com/in/santiago-quintero-561202256"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <div class="flex items-center">
+        <span class="relative inline-flex overflow-hidden rounded-full p-[1px]">
+          <span
+            class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#51E4B8_0%,#21554E_50%,#51E4B8_100%)]"
+          ></span>
+          <div
+            class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-green-800 bg-green-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap"
+          >
+            Disponible para trabajar
+          </div>
+        </span>
+      </div>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hey, soy santi
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    +2 años de experiencia.
+    <strong>Tecnologo en Desarrollo de Sistemas de Informacion</strong>
+    soy del Quindio, Colombia 🇪🇸. Especializado en el desarrollo de aplicaciones
+    web como desarrollador fullstack.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <app-socialpill-icon [href]="'mailto:quintero28194@gmail.com'">
+      <app-mail-icon class="size-4"> </app-mail-icon>
+      Contáctame
+    </app-socialpill-icon>
+
+    <app-socialpill-icon
+      [href]="'https://linkedin.com/in/santiago-quintero-561202256'"
+    >
+      <app-linked-icon class="size-4"> </app-linked-icon>
+      LinkedIn
+    </app-socialpill-icon>
+  </nav>
+</div>
+
