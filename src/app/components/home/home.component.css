@@ -8,6 +8,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overscroll-behavior: none;
+  width: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -22,11 +23,6 @@ body {
   }
 }
 
-#header-nav {
-  animation: blur linear both 0.5s;
-  animation-timeline: scroll();
-  animation-range: 0 500px;
-}
 
 @keyframes blur {
   to {
