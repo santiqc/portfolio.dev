@@ -1,16 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import CustomSectionComponent from '../pages/section-component.component';
-import { SocialPillComponent } from '../icons/SocialPill.component';
-import { MailIconComponent } from '../icons/MailIcon.component';
-import { LinkedInIconComponent } from '../icons/LinkedInIcon.component';
+import CustomSectionComponent from '../../pages/section-component.component';
+import { SocialPillComponent } from '../../icons/SocialPill.component';
+import { MailIconComponent } from '../../icons/MailIcon.component';
+import { LinkedInIconComponent } from '../../icons/LinkedInIcon.component';
 
 @Component({
   selector: 'app-layout',
   standalone: true,
   imports: [
     CommonModule,
-    CustomSectionComponent,
     SocialPillComponent,
     MailIconComponent,
     LinkedInIconComponent
@@ -20,6 +19,4 @@ import { LinkedInIconComponent } from '../icons/LinkedInIcon.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LayoutComponent {
-  id: string = "sectionId";
-  className: string = "py-16 md:py-36";
  }
