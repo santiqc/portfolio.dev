@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('@fontsource/onest'); 
+@import url('@fontsource/onest');
 
 
 
@@ -11,4 +11,9 @@ html {
     font-family: 'Onest', sans-serif;
     scroll-behavior: smooth;
 }
-html, body { height: 100%; }
+
+/* body {
+    height: 100%;
+    position: relative;
+    width: 100%;
+} */
