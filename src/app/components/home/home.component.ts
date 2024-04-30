@@ -3,7 +3,9 @@ import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { ThemeModeService } from '../service/ThemeMode.service';
 import { FooterComponent } from '../footer/footer.component';
-import { LayoutComponent } from '../layout/layout.component';
+import { LayoutComponent } from '../layout/component/layout.component';
+import { WorkPileComponent } from '../layout/work-pile/work-pile.component';
+import CustomSectionComponent from '../pages/section-component.component';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +14,9 @@ import { LayoutComponent } from '../layout/layout.component';
     CommonModule,
     HeaderComponent,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    WorkPileComponent,
+    CustomSectionComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
