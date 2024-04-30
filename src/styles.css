@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import '@fontsource/onest';
+@import url('@fontsource/onest'); 
 
 
 
@@ -12,4 +12,3 @@ html {
     scroll-behavior: smooth;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
