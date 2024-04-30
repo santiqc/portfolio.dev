@@ -6,6 +6,7 @@ import { FooterComponent } from '../footer/footer.component';
 import { LayoutComponent } from '../layout/component/layout.component';
 import { WorkPileComponent } from '../layout/work-pile/work-pile.component';
 import CustomSectionComponent from '../pages/section-component.component';
+import { ExperiencieComponent } from '../experiencie/experiencie.component';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,8 @@ import CustomSectionComponent from '../pages/section-component.component';
     FooterComponent,
     LayoutComponent,
     WorkPileComponent,
-    CustomSectionComponent
+    CustomSectionComponent,
+    ExperiencieComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

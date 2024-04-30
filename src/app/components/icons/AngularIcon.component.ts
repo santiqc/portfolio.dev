@@ -80,6 +80,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 export class AngularIconComponent {
   @Input() class: String = '';
   @Input() nameTooltip: String = '';
-  //size-[30px] dark:text-emerald-300 text-zinc-700 duration-200 dark:hover:text-inherit hover:text-zinc-700/70
+  
 
 }
