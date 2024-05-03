@@ -7,6 +7,7 @@ import { LayoutComponent } from '../layout/component/layout.component';
 import { WorkPileComponent } from '../layout/work-pile/work-pile.component';
 import CustomSectionComponent from '../pages/section-component.component';
 import { ExperiencieComponent } from '../experiencie/experiencie.component';
+import { ProjectsComponent } from '../Projects/Projects.component';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +19,8 @@ import { ExperiencieComponent } from '../experiencie/experiencie.component';
     LayoutComponent,
     WorkPileComponent,
     CustomSectionComponent,
-    ExperiencieComponent
+    ExperiencieComponent,
+    ProjectsComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',

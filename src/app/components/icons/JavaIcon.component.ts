@@ -47,6 +47,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     `,
 })
 export class JavaIconComponent {
-  @Input() class: String = '';
+  @Input() class: String = 'size-4';
   @Input() nameTooltip: String = '';
 }
