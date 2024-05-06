@@ -7,7 +7,8 @@ import { LayoutComponent } from '../layout/component/layout.component';
 import { WorkPileComponent } from '../layout/work-pile/work-pile.component';
 import CustomSectionComponent from '../pages/section-component.component';
 import { ExperiencieComponent } from '../experiencie/experiencie.component';
-import { ProjectsComponent } from '../Projects/Projects.component';
+import { ProjectsComponent } from '../projects/Projects.component';
+import { AboutMeComponent } from '../aboutMe/aboutMe.component';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +21,8 @@ import { ProjectsComponent } from '../Projects/Projects.component';
     WorkPileComponent,
     CustomSectionComponent,
     ExperiencieComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    AboutMeComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
