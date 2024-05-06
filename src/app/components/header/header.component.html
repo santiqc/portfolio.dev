@@ -8,7 +8,8 @@
     <a
       class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-400"
       aria-label="{item.label}"
-      href="{item.url}"
+      (click)="handleClick(item)"
+      style="cursor: pointer;"
     >
       {{ item.title }}
     </a>
