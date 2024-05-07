@@ -1,11 +1,23 @@
  :host {
    display: block;
  }
- #header-nav {
-  animation: blur linear both 0.5s;
+
+ nav {
+  animation: nav-shadow 1s linear both;
   animation-timeline: scroll();
-  animation-range: 0 500px;
+  animation-range: 0 100px;
 }
+
+@keyframes nav-shadow {
+  to {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
  #themes-menu.open {
    display: inline;
    animation: scale-up-center 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -20,19 +32,5 @@
    to {
      transform: scale(1);
      opacity: 1;
-   }
- }
-
- nav {
-   animation: nav-shadow 1s linear both;
- }
-
- @keyframes nav-shadow {
-   to {
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-     border: 1px solid rgba(255, 255, 255, 0.1);
-     backdrop-filter: blur(10px);
-     background-color: rgba(255, 255, 255, 0.5);
-     background-color: rgba(0, 0, 0, 0.1);
    }
  }

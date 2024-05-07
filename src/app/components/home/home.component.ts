@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, ElementRef, OnDestroy, ViewChild, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, HostBinding, OnDestroy, ViewChild, inject } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { ThemeModeService } from '../service/ThemeMode.service';
 import { FooterComponent } from '../footer/footer.component';
@@ -35,11 +35,18 @@ export default class HomeComponent implements OnDestroy {
   title = 'portfolio.dev';
   service = inject(ThemeModeService);
   theme!: string;
-  private subscription: Subscription; 
+  themeKey!: string;
+
+  private subscription: Subscription;
+
+  @HostBinding('class.dark') get mode() {
+    return (this.theme == 'dark');
+  }
 
   constructor(private scrollService: ScrollService) {
     this.service.theme.asObservable().subscribe(theme => {
       this.theme = theme!.value;
+      this.themeKey = theme.key;
     });
     this.subscription = this.scrollService.sectionId$.subscribe(id => {
       this.scrollToSection(id);

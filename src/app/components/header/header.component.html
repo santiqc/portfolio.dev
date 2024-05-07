@@ -2,14 +2,14 @@
   class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2"
 >
   <nav
-    class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
+    class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 bg-transparent  justify-center items-center"
   >
     @for (item of navItems; track $index) {
     <a
       class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-400"
       aria-label="{item.label}"
       (click)="handleClick(item)"
-      style="cursor: pointer;"
+      style="cursor: pointer"
     >
       {{ item.title }}
     </a>

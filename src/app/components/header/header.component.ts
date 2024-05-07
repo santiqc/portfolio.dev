@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, EventEmitter, OnInit, Output, } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, HostBinding, OnInit, Output, } from '@angular/core';
 import { SunIconComponent } from '../icons/SunIcon.component';
 import { MoonIconComponent } from '../icons/MoonIcon.component';
 import { SystemIconComponent } from '../icons/SystemIcon.component';
@@ -75,7 +75,6 @@ export class HeaderComponent implements OnInit {
 
   togglePopover(): void {
     this.isPopoverOpen = !this.isPopoverOpen;
-    console.log(this.isPopoverOpen, 'openchange');
   }
 
   handleClick(item: any): void {
