@@ -35,7 +35,6 @@ export default class HomeComponent implements OnDestroy {
   title = 'portfolio.dev';
   service = inject(ThemeModeService);
   theme!: string;
-  themeKey!: string;
 
   private subscription: Subscription;
 
@@ -46,7 +45,7 @@ export default class HomeComponent implements OnDestroy {
   constructor(private scrollService: ScrollService) {
     this.service.theme.asObservable().subscribe(theme => {
       this.theme = theme!.value;
-      this.themeKey = theme.key;
+
     });
     this.subscription = this.scrollService.sectionId$.subscribe(id => {
       this.scrollToSection(id);
