@@ -1,6 +1,7 @@
-import { CommonModule } from '@angular/common';
+
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { BriefcaseIconComponent } from '../icons/BriefcaseIcon.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-experiencie',
@@ -19,7 +20,7 @@ export class ExperiencieComponent {
     {
       date: "Abril 2024 - Actualmente...",
       title: "Desarrollador FullStack Freelance",
-      company: "FREELANCE, RemotO",
+      company: "FREELANCE, Remoto",
       description:
         "Formo parte de un proyecto en un banco para España donde me encargo del " +
         "mantenimiento y desarrollo de nuevas características, así como la gestión de " +
