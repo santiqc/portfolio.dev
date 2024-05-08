@@ -1,13 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Type } from '@angular/core';
-import { CodeIconComponent } from '../icons/CodeIcon.component';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Project, Tag } from '../interfaces/Tags';
+import { JavaIconComponent } from '../icons/JavaIcon.component';
 import { TailwindIconComponent } from '../icons/TailwindIcon.component';
+import { CodeIconComponent } from '../icons/CodeIcon.component';
 import { GitHubIconComponent } from '../icons/GitHubIcon.component';
 import { LinkIconComponent } from '../icons/LinkIcon.component';
-import { JavaIconComponent } from '../icons/JavaIcon.component';
-import { Project, Tag } from '../interfaces/Tags';
-
-
 
 const TAGS: { [key: string]: Tag } = {
   JAVA: {
@@ -23,7 +21,7 @@ const TAGS: { [key: string]: Tag } = {
 };
 
 @Component({
-  selector: 'app-projects',
+  selector: 'app-project',
   standalone: true,
   imports: [
     CommonModule,
@@ -32,12 +30,11 @@ const TAGS: { [key: string]: Tag } = {
     GitHubIconComponent,
     LinkIconComponent
   ],
-  templateUrl: './Projects.component.html',
-  styleUrl: './Projects.component.css',
+  templateUrl: './project.component.html',
+  styleUrl: './project.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectsComponent {
-
+export class ProjectComponent {
   PROJECTS: Project[] = [
     {
       title: "Ejemplo de proyecto 1",
@@ -56,9 +53,5 @@ export class ProjectsComponent {
       tags: [TAGS['JAVA'], TAGS['TAILWIND']],
     },
   ];
-
-
-
-
 
 }
