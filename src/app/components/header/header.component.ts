@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, EventEmitter, Ho
 import { SunIconComponent } from '../icons/SunIcon.component';
 import { MoonIconComponent } from '../icons/MoonIcon.component';
 import { SystemIconComponent } from '../icons/SystemIcon.component';
-import { ThemeModeService } from '../service/ThemeMode.service';
+import { ThemeModeService } from '../services/ThemeMode.service';
 import { ScrollService } from '../services/ScrollService.service';
 
 

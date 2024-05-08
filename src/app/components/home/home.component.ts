@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ElementRef, HostBinding, OnDestroy, ViewChild, inject } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
-import { ThemeModeService } from '../service/ThemeMode.service';
+import { ThemeModeService } from '../services/ThemeMode.service';
 import { FooterComponent } from '../footer/footer.component';
 import { LayoutComponent } from '../layout/component/layout.component';
 import { WorkPileComponent } from '../layout/work-pile/work-pile.component';
