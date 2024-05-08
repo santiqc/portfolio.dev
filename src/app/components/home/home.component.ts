@@ -7,10 +7,10 @@ import { LayoutComponent } from '../layout/component/layout.component';
 import { WorkPileComponent } from '../layout/work-pile/work-pile.component';
 import CustomSectionComponent from '../pages/section-component.component';
 import { ExperiencieComponent } from '../experiencie/experiencie.component';
-import { ProjectsComponent } from '../projects/Projects.component';
 import { AboutMeComponent } from '../aboutMe/aboutMe.component';
 import { Subscription } from 'rxjs';
 import { ScrollService } from '../services/ScrollService.service';
+import { ProjectComponent } from '../project/project.component';
 
 @Component({
   selector: 'app-home',
@@ -23,14 +23,14 @@ import { ScrollService } from '../services/ScrollService.service';
     WorkPileComponent,
     CustomSectionComponent,
     ExperiencieComponent,
-    ProjectsComponent,
+    ProjectComponent,
     AboutMeComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class HomeComponent implements OnDestroy {
+export class HomeComponent implements OnDestroy {
 
   title = 'portfolio.dev';
   service = inject(ThemeModeService);
