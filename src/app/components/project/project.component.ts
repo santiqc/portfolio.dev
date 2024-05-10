@@ -42,7 +42,7 @@ export class ProjectComponent {
       description: "Esta es una descripción más larga del ejemplo de proyecto 1. Puede incluir detalles adicionales sobre el proyecto, como su funcionalidad, tecnologías utilizadas, desafíos encontrados durante el desarrollo y cualquier otro aspecto relevante.",
       link: "https://github.com/santiqc/portfolio.dev",
       github: "https://github.com/santiqc/portfolio.dev",
-      image: "/assets/images/not-found.png",
+      image: "assets/images/not-found.png",
       tags: [TAGS['JAVA'], TAGS['TAILWIND']],
     },
     {
@@ -50,7 +50,7 @@ export class ProjectComponent {
       description: "Esta es una descripción más larga del ejemplo de proyecto 2. Puede incluir detalles adicionales sobre el proyecto, como su funcionalidad, tecnologías utilizadas, desafíos encontrados durante el desarrollo y cualquier otro aspecto relevante.",
       link: "https://github.com/santiqc/portfolio.dev",
       github: "https://github.com/santiqc/portfolio.dev",
-      image: "/assets/images/not-found.png",
+      image: "assets/images/not-found.png",
       tags: [TAGS['JAVA'], TAGS['TAILWIND']],
     },
   ];
