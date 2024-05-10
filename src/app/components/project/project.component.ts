@@ -1,13 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Type } from '@angular/core';
-import { CodeIconComponent } from '../icons/CodeIcon.component';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Project, Tag } from '../interfaces/Tags';
+import { JavaIconComponent } from '../icons/JavaIcon.component';
 import { TailwindIconComponent } from '../icons/TailwindIcon.component';
+import { CodeIconComponent } from '../icons/CodeIcon.component';
 import { GitHubIconComponent } from '../icons/GitHubIcon.component';
 import { LinkIconComponent } from '../icons/LinkIcon.component';
-import { JavaIconComponent } from '../icons/JavaIcon.component';
-import { Project, Tag } from '../interfaces/Tags';
-
-
 
 const TAGS: { [key: string]: Tag } = {
   JAVA: {
@@ -23,7 +21,7 @@ const TAGS: { [key: string]: Tag } = {
 };
 
 @Component({
-  selector: 'app-projects',
+  selector: 'app-project',
   standalone: true,
   imports: [
     CommonModule,
@@ -32,11 +30,11 @@ const TAGS: { [key: string]: Tag } = {
     GitHubIconComponent,
     LinkIconComponent
   ],
-  templateUrl: './Projects.component.html',
-  styleUrl: './Projects.component.css',
+  templateUrl: './project.component.html',
+  styleUrl: './project.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectsComponent {
+export class ProjectComponent {
 
   PROJECTS: Project[] = [
     {
@@ -44,7 +42,7 @@ export class ProjectsComponent {
       description: "Esta es una descripción más larga del ejemplo de proyecto 1. Puede incluir detalles adicionales sobre el proyecto, como su funcionalidad, tecnologías utilizadas, desafíos encontrados durante el desarrollo y cualquier otro aspecto relevante.",
       link: "https://github.com/santiqc/portfolio.dev",
       github: "https://github.com/santiqc/portfolio.dev",
-      image: "/assets/images/not-found.png",
+      image: "assets/images/not-found.png",
       tags: [TAGS['JAVA'], TAGS['TAILWIND']],
     },
     {
@@ -52,13 +50,8 @@ export class ProjectsComponent {
       description: "Esta es una descripción más larga del ejemplo de proyecto 2. Puede incluir detalles adicionales sobre el proyecto, como su funcionalidad, tecnologías utilizadas, desafíos encontrados durante el desarrollo y cualquier otro aspecto relevante.",
       link: "https://github.com/santiqc/portfolio.dev",
       github: "https://github.com/santiqc/portfolio.dev",
-      image: "/assets/images/not-found.png",
+      image: "assets/images/not-found.png",
       tags: [TAGS['JAVA'], TAGS['TAILWIND']],
     },
   ];
-
-
-
-
-
 }
