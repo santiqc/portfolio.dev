@@ -5,6 +5,7 @@ import { JavaIconComponent } from '../../icons/JavaIcon.component';
 import { SpringIconComponent } from '../../icons/SpringIcon.component';
 import { MySqlIconComponent } from '../../icons/MySqlIcon.component';
 import { PostgreSQLIconComponent } from '../../icons/PostgreSQLIcon.component';
+import { AmazonIconComponent } from '../../icons/AmazonIcon.component';
 
 @Component({
   selector: 'app-work-pile',
@@ -15,7 +16,8 @@ import { PostgreSQLIconComponent } from '../../icons/PostgreSQLIcon.component';
     JavaIconComponent,
     SpringIconComponent,
     MySqlIconComponent,
-    PostgreSQLIconComponent
+    PostgreSQLIconComponent,
+    AmazonIconComponent
   ],
   templateUrl: './work-pile.component.html',
   styleUrl: './work-pile.component.css',
