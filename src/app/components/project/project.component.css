@@ -1,3 +1,13 @@
 :host {
   display: block;
 }
+@media (min-width: 360px) {
+  .custom-padding-left {
+    padding-left: 0.5rem; 
+  }
+}
+@media (min-width: 360px) {
+  .custom-padding-right {
+    padding-right: 0.5rem; 
+  }
+}
