@@ -18,6 +18,19 @@ export class ExperiencieComponent {
 
   EXPERIENCIE = [
     {
+      date: "Mayo 2024 - Actualmente...",
+      title: "Desarrollador Backend",
+      company: "LinkTic, Remoto",
+      description:
+        "POSITIVA (Aplicativo de seguros): Análisis, desarrollo e implementación de " +
+        "nuevas características de un aplicativo web, el cual implementa servicios para " +
+        "la parte backend en el lenguaje Java usando Spring Boot, y Frontend con " +
+        "Vue.js.Implementa tecnologías como Liquibase, Maven, base de datos " +
+        "PostgreSQL, y Spring Security. Es un aplicativo para el manejo, control y " +
+        "seguimiento de procesos de documentación, tramites, quejas.",
+      link: "",
+    },
+    {
       date: "Abril 2024 - Actualmente...",
       title: "Desarrollador FullStack Freelance",
       company: "FREELANCE, Remoto",
