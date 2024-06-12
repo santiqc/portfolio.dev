@@ -35,7 +35,6 @@ const TAGS: { [key: string]: Tag } = {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProjectComponent {
-
   PROJECTS: Project[] = [
     {
       title: "Ejemplo de proyecto 1",
