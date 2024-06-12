@@ -12,8 +12,6 @@ import { Subscription } from 'rxjs';
 import { ScrollService } from '../services/ScrollService.service';
 import { ProjectComponent } from '../project/project.component';
 
-
-
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -32,7 +30,7 @@ import { ProjectComponent } from '../project/project.component';
   styleUrl: './home.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class HomeComponent implements OnDestroy {
+export class HomeComponent implements OnDestroy {
 
   title = 'portfolio.dev';
   service = inject(ThemeModeService);

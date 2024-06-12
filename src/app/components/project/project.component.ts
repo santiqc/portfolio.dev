@@ -53,5 +53,4 @@ export class ProjectComponent {
       tags: [TAGS['JAVA'], TAGS['TAILWIND']],
     },
   ];
-
 }
