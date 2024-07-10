@@ -25,13 +25,13 @@ export class ExperiencieComponent {
         "POSITIVA (Aplicativo de seguros): Análisis, desarrollo e implementación de " +
         "nuevas características de un aplicativo web, el cual implementa servicios para " +
         "la parte backend en el lenguaje Java usando Spring Boot, y Frontend con " +
-        "Vue.js.Implementa tecnologías como Liquibase, Maven, base de datos " +
+        "Vue.js. Implementa tecnologías como Liquibase, Maven, base de datos " +
         "PostgreSQL, y Spring Security. Es un aplicativo para el manejo, control y " +
         "seguimiento de procesos de documentación, tramites, quejas.",
       link: "",
     },
     {
-      date: "Abril 2024 - Actualmente...",
+      date: "Abril 2024 -  Julio 2024",
       title: "Desarrollador FullStack Freelance",
       company: "FREELANCE, Remoto",
       description:
