@@ -37,20 +37,12 @@ const TAGS: { [key: string]: Tag } = {
 export class ProjectComponent {
   PROJECTS: Project[] = [
     {
-      title: "Ejemplo de proyecto 1",
-      description: "Esta es una descripción más larga del ejemplo de proyecto 1. Puede incluir detalles adicionales sobre el proyecto, como su funcionalidad, tecnologías utilizadas, desafíos encontrados durante el desarrollo y cualquier otro aspecto relevante.",
-      link: "https://github.com/santiqc/portfolio.dev",
-      github: "https://github.com/santiqc/portfolio.dev",
+      title: "Proyecto próximamente...",
+      description: "Estoy trabajando en nuevos proyectos. Pronto compartiré más detalles.",
+      link: "",
+      github: "",
       image: "assets/images/not-found.png",
       tags: [TAGS['JAVA'], TAGS['TAILWIND']],
-    },
-    {
-      title: "Ejemplo de proyecto 2",
-      description: "Esta es una descripción más larga del ejemplo de proyecto 2. Puede incluir detalles adicionales sobre el proyecto, como su funcionalidad, tecnologías utilizadas, desafíos encontrados durante el desarrollo y cualquier otro aspecto relevante.",
-      link: "https://github.com/santiqc/portfolio.dev",
-      github: "https://github.com/santiqc/portfolio.dev",
-      image: "assets/images/not-found.png",
-      tags: [TAGS['JAVA'], TAGS['TAILWIND']],
-    },
+    }
   ];
 }
