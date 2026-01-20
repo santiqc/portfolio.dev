@@ -17,7 +17,7 @@ export class ExperiencieComponent {
 
   EXPERIENCIE = [
     {
-      date: "Mayo 2024 - Actual",
+      date: "Mayo 2024 - Enero 2026",
       title: "Desarrollador SemiSenior",
       company: "LinkTic, Remoto",
       description: [
